@@ -1,0 +1,1 @@
+{"name":"Local: minOrSum","url":"/home/wfs0011/codeforces/Competitive-Programming/minOrSum.py","tests":[{"id":1654105985909,"input":"4\n3\n1 3 2\n5\n1 2 4 8 16\n2\n6 6\n3\n3 5 6","output":"3\n31\n6\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/wfs0011/codeforces/Competitive-Programming/minOrSum.py","group":"local","local":true}
