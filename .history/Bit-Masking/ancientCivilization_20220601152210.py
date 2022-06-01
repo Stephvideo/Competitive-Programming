@@ -7,6 +7,7 @@ for t in range(T):
     n, l = map(int, input().split())
 
     nums = list(map(int, input().split()))
+asdf
     ans = 0
     for i in range(l):
         pos = 0
