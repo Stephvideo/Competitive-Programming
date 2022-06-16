@@ -30,27 +30,19 @@ for t in range(int(input())):
         high = n-1
 
         while (high >= low):
-            mid = (low + high)//2
+            mid = (low + high)/2
             check = 0
             if i == 0:
                 check = cumSum[mid]
             else:
                 check = cumSum[mid] - cumSum[i-1]
             
-
             if check == s:
-                if ans == -1:
-                    ans = mid - i + 1
-                elif (mid - i + 1) > ans:
-                    ans = mid - i + 1
+                if check > ans:
+                    check = ans
                 low = mid + 1
-           
             elif check < s:
                 low = mid + 1
             else:
                 high = mid - 1
-
-    if ans == -1:
-        print(-1)
-    else:
-        print (n-ans)
+    print (ans)

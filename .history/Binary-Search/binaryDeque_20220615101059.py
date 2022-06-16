@@ -39,18 +39,11 @@ for t in range(int(input())):
             
 
             if check == s:
-                if ans == -1:
-                    ans = mid - i + 1
-                elif (mid - i + 1) > ans:
-                    ans = mid - i + 1
+                if check > ans:
+                    ans = check
                 low = mid + 1
-           
             elif check < s:
                 low = mid + 1
             else:
                 high = mid - 1
-
-    if ans == -1:
-        print(-1)
-    else:
-        print (n-ans)
+    print (ans)
